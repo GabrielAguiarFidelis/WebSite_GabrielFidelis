@@ -73,6 +73,12 @@ sr.reveal('.stack__item.right', {
   distance: '100px',
   interval: 200
 });
+sr.reveal('.contact__description', { delay: 200 })
+sr.reveal('.form', {
+origin: 'bottom',
+distance: '80px',
+delay: 400
+})
 
 /*=============== CONTATO ===============*/
 function enviarWhats(event){
