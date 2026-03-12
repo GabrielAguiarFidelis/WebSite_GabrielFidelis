@@ -34,6 +34,10 @@
                                    <li class="nav__item">
                                           <a href="#projetos" class="nav__link">Projetos</a>
                                    </li>
+
+                                   <li class="nav__item">
+                                          <a href="#contato" class="nav__link">Contate-me</a>
+                                   </li>
                             </ul>
                      </div>
               </nav>
@@ -78,7 +82,7 @@
                                           <i>Sou desenvolvedor focado em criar soluções web e sistemas funcionais,
                                                  modernos e bem estruturados. Tenho experiência com desenvolvimento
                                                  front-end, back-end e forte interesse em segurança digital. Gosto de
-                                                 entender como as coisas funcionam por trás, escrever código limpo e
+                                                 escrever código limpo e
                                                  construir projetos que realmente resolvem problemas. Estou em constante
                                                  evolução, sempre buscando aprender novas tecnologias e aprimorar minhas
                                                  habilidades.</i>
@@ -173,6 +177,33 @@
                             </article>
                      </div>
               </div>
+
+              <!--==================== CONTATO ====================-->
+              <section class="contact section" id="contato">
+                     <div class="contact__container container">
+
+                            <h2 class="section__title">Contato</h2>
+
+                            <p class="contact__description">
+                                   Quer falar comigo sobre projetos, freelas ou ideias?</br>
+                                   Me manda uma mensagem.
+                            </p>
+
+                            <form class="form" id="contatoForm" onsubmit="enviarWhats(event)">
+                                   <input type="text" id="nome" placeholder="Nome Completo" required>
+
+                                   <input type="email" id="email" placeholder="E-mail" required>
+
+                                   <textarea id="mensagem" placeholder="Digite sua mensagem" rows="6"
+                                          required></textarea>
+
+                                   <button type="submit">
+                                          Enviar Mensagem
+                                   </button>
+                            </form>
+
+                     </div>
+              </section>
 
               <!--==================== FOOTER ====================-->
               <footer class="footer" id="footer">

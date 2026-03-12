@@ -73,3 +73,28 @@ sr.reveal('.stack__item.right', {
   distance: '100px',
   interval: 200
 });
+
+/*=============== CONTATO ===============*/
+function enviarWhats(event){
+
+event.preventDefault()
+
+let nome = document.getElementById("nome").value
+let email = document.getElementById("email").value
+let mensagem = document.getElementById("mensagem").value
+
+let telefone = "5585988100380" 
+
+let texto = `Olá Gabriel, meu nome é ${nome}.
+Email: ${email}
+
+Mensagem:
+${mensagem}`
+
+let msgFormatada = encodeURIComponent(texto)
+
+let url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+window.open(url, "_blank")
+
+}
