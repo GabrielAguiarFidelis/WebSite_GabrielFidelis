@@ -63,3 +63,13 @@ sr.reveal('.card__article', {
 sr.reveal('.footer__content', { delay: 200 });
 sr.reveal('.footer__social', { delay: 400 });
 sr.reveal('.footer__group', { delay: 600 });
+sr.reveal('.stack__item.left', {
+  origin: 'left',
+  distance: '100px',
+  interval: 200
+});
+sr.reveal('.stack__item.right', {
+  origin: 'right',
+  distance: '100px',
+  interval: 200
+});

@@ -239,6 +239,7 @@
  /*=============== HOME ===============*/
  .home {
         position: relative;
+        min-height: 80vh;
  }
 
  .home__bg {
@@ -339,6 +340,11 @@
  }
 
  /*=============== PROJECTS ===============*/
+#projetos {
+       scroll-margin-top: 200px;
+       margin-top: 200px;
+}
+
  .card__container {
         display: grid;
         row-gap: 3.5rem;
@@ -546,8 +552,72 @@
  }
 
 
- /*=============== SCROLL ===============*/
+ /*=============== STACKS ===============*/
+.stack__timeline{
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 0;
+}
 
+/* linha no meio */
+.stack__timeline::after{
+  content: '';
+  position: absolute;
+  width: 3px;
+  background: #ccc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.stack__item{
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.stack__item.left{
+  left: 0;
+  text-align: right;
+}
+
+.stack__item.right{
+  left: 50%;
+}
+
+.stack__content{
+  background: var(--card);
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.stack__content i{
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.stack__item::after{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 3px solid #888;
+  top: 30px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.stack__item.left::after{
+  right: -8px;
+}
+
+.stack__item.right::after{
+  left: -8px;
+}
 
  /*=============== SCROLL UP ===============*/
  .scrollup {
