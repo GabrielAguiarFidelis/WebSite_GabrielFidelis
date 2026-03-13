@@ -30,7 +30,8 @@ O objetivo é ser simples, direto, responsivo e profissional — do jeito que se
 ## 🛠️ Tecnologias Utilizadas
 
 - HTML5  
-- CSS3  
+- CSS3
+- Javascript (Vanilla JS)
 - Vercel (Deploy)
 
 ---
